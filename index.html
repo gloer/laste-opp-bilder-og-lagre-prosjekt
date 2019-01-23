@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bildevelger til portefølje</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation-float.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <main>
+        <h1>1 Last opp bilder hvis du trenger flere</h1>
+        <form id="skjemaBilder">
+            <input class="button" type="file" required id="inpBilde">
+            <input type="text" required id="inpBildetekst" placeholder="bildetekst">
+            <button class="button" type="submit">Last opp bilde</button>
+        </form>
+    
+        <h1>2 Velg bilder til prosjektet</h1>
+    
+        <section id="secBilder">
+    
+        </section>
+    
+        <h1>3 Beskriv dette prosjektet</h1>
+        <form id="prosjektSkjema">
+            <input type="text" id="inpTittel" placeholder="tittel" required>
+            <button class="button" type="submit">Lagre prosjekt</button>        
+        </form>
+    </main>
+    
+
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBH4FrKDl4jPF_VrdaeSUo_dwcOAnYzu6M",
+        authDomain: "messenger-f24b5.firebaseapp.com",
+        databaseURL: "https://messenger-f24b5.firebaseio.com",
+        projectId: "messenger-f24b5",
+        storageBucket: "messenger-f24b5.appspot.com",
+        messagingSenderId: "534087828082"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+</html>
