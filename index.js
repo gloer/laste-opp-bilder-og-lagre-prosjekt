@@ -18,8 +18,6 @@ const storage = firebase.storage();
 const bilder = db.ref("bilder");
 const prosjekter = db.ref("prosjekter");
 
-const bilderSomSkalLastesOpp = [];
-
 
 function visBilde(snap) {
     const data = snap.val();
